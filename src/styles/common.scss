@@ -91,11 +91,11 @@ ul {
   &__logo-link  {
     width: 48px;
     height: 32px;
-  }
 
-  &__logo-link svg {
-    width: 48px;
-    height: 32px;
+    & svg {
+      width: 48px;
+      height: 32px;
+    }
   }
 
   &__menu-burger {
@@ -105,12 +105,74 @@ ul {
     border: none;
     background-color: transparent;
     cursor: pointer;
-  }
-  &__menu-burger svg {
-    width: 32px;
-    height: 32px;
+
+    & svg {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
+
+.burger-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  flex-direction: row-reverse;
+  visibility: hidden;
+  padding: 48px 83px;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  background-color: $colorWhite;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  transform: translate(0, -200px);
+  transition-property: visibility, transform;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+
+  &__close-btn {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+
+    & svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__nav {
+    flex: 1 1 auto;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  &__list {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__link {
+    margin-bottom: -3px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 500;
+    color: $mainColorDark;
+    transition-property: border, color;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+  }
+
+  &_active {
+    visibility: visible;
+    transform: translate(0)
+  }
+}
+
+
 
 .section-hero {
   margin-bottom: 190px;

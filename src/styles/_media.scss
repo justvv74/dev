@@ -8,6 +8,10 @@
 }
 
 @media (max-width: 1024px) {
+  .body-noscroll {
+    right: 0;
+  }
+
   .section-hero {
     padding: 179px 120px 190px;
   }
@@ -73,6 +77,10 @@
 }
 
 @media (max-width: 768px) {
+  .burger-menu {
+    padding: 32px 32px;
+  }
+
   .section-hero {
     margin-bottom: 80px;
     padding: 120px 32px 120px;
@@ -199,6 +207,19 @@
 }
 
 @media (max-width: 525px) {
+  .burger-menu {
+    flex-direction: column;
+
+    &__close-btn {
+      align-self: flex-end;
+    }
+
+    &__list {
+      flex-direction: column;
+      height: 160px;
+    }
+  }
+
   .section-hero {
     margin-bottom: 40px;
     padding: 80px 32px;
@@ -225,7 +246,7 @@
   }
 
   .content-box {
-    padding: 32px;
+    padding: 20px;
   }
   .section-clients {
     &__header {

@@ -25,6 +25,37 @@
         </svg>
       </button>
     </div>
+    <div class="burger-menu flex">
+      <button class="burger-menu__close-btn" aria-label="close menu">
+        <svg>
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <nav class="burger-menu__nav">
+        <ul class="burger-menu__list flex">
+          <li class="burger-menu__item">
+            <a href="#" class="burger-menu__link">
+              Home
+            </a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="#" class="burger-menu__link">
+              About Us
+            </a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="#" class="burger-menu__link">
+              Our work
+            </a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="#" class="burger-menu__link">
+              Contacts
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
     <section class="section section-hero">
@@ -184,7 +215,9 @@
             SEND US MESSAGE
           </h2>
           <button id="modal-close" class="modal__close-btn">
-            <img  src="img/close.png" alt="close modal">
+            <svg>
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
           </button>
         </div>
         <form class="modal__form" onsubmit="false" novalidate>

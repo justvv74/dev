@@ -20,6 +20,22 @@
   outline: 1px solid $mainColorDark;
 }
 
+.burger-menu__link:focus {
+  outline: 1px solid $mainColorDark;
+}
+
+.burger-menu__link:hover {
+  margin-bottom: -3px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid $mainColorDark;
+}
+
+.burger-menu__link:active {
+  border-color: $mainColorLight;
+  color: $mainColorLight;
+  outline: none;
+}
+
 .content-box__link:focus {
   outline: 1px solid $mainColorDark;
 }
