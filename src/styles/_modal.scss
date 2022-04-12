@@ -6,7 +6,7 @@
 }
 
 .modal {
-  z-index: 100;
+  z-index: 1000;
   position: fixed;
   top: 0;
   right: 0;
@@ -101,7 +101,7 @@
 
 .input {
   padding: 21px 42px;
-  width: 428px;
+  max-width: 428px;
   height: 72px;
   border: 1px solid $colorBlue3;
   border-radius: 10px;
