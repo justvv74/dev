@@ -1,0 +1,157 @@
+.body-noscroll {
+  position: absolute;
+  right: 17px;
+  left: 0;
+  overflow: hidden;
+}
+
+.modal {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .1s linear, visibility 1s linear;
+
+  &__header {
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 30px;
+    color: $colorText;
+  }
+
+  &__close-btn {
+    align-self: flex-end;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__box {
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 56px;
+    border-radius: 15px;
+    background-color: $colorWhite;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+  }
+
+  &__label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 30px;
+    color: $colorText;
+  }
+
+  &__textarea {
+    margin-bottom: 72px;
+    height: 144px;
+    resize: none;
+  }
+
+  &__textarea::placeholder {
+    font-size: 16px;
+    line-height: 30px;
+    color: #1f3f682a;
+  }
+
+  &__btn {
+    width: 100%;
+    height: 72px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: $colorWhite;
+    letter-spacing: 1.5px;
+    background-color: $mainColorLight;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    transition-property: border, color, background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+  }
+
+  &__shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, .8);
+  }
+}
+
+.input {
+  padding: 21px 42px;
+  width: 428px;
+  height: 72px;
+  border: 1px solid $colorBlue3;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'gilroy';
+}
+
+.input::placeholder {
+  font-size: 16px;
+  line-height: 30px;
+  color: #1f3f682a;
+}
+
+.input:invalid {
+  outline: 3px solid red;
+}
+
+.input:not(:nth-last-child(-n+2)) {
+  margin-bottom: 20px;
+}
+
+.label-error {
+  color: red;
+}
+
+.modal_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.error {
+  outline: 3px double red;
+}
+
+.form-message {
+  z-index: 100;
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+  padding: 20px;
+  border: 1px solid $mainColorDark;
+  border-radius: 10px;
+  color: $colorWhite;
+  background-color: $mainColorLight;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .1s linear, visibility 1s linear;
+}
+
+.form-message-visible {
+  visibility: visible;
+  opacity: 1;
+}

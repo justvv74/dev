@@ -1,0 +1,119 @@
+.btn:focus {
+  border: 1px solid $colorWhite;
+  background-color: rgb(110, 180, 241);
+  outline: none;
+}
+
+.btn:hover {
+  border: 1px solid $colorText;
+  color: $mainColorLight;
+  background-color: $colorWhite;
+}
+
+.btn:active {
+  border: 1px solid $colorWhite;
+  color: $colorWhite;
+  background-color: $mainColorDark;
+}
+
+.header__logo-link:focus {
+  outline: 1px solid $mainColorDark;
+}
+
+.content-box__link:focus {
+  outline: 1px solid $mainColorDark;
+}
+
+.content-box__link:hover svg{
+  margin-left: 37px;
+}
+
+.content-box__link:active {
+  color: $mainColorDark;
+  outline: none;
+}
+
+.section-clients__clients-link::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.section-clients__clients-link:focus {
+  outline: 1px solid $mainColorDark;
+}
+
+.section-clients__clients-link:active {
+  outline: none;
+}
+
+.section-clients__clients-item:hover {
+  background-color: rgb(110, 180, 241);
+}
+
+.section-clients__clients-item:active {
+  background-color: $mainColorDark;
+}
+
+.footer__logo-link:focus {
+  outline: 1px solid $mainColorLight;
+}
+
+.footer__adr-link:focus {
+  outline: 1px solid $mainColorLight;
+}
+
+.footer__adr-link:hover {
+  margin-bottom: -3px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid $colorWhite;
+}
+
+.footer__adr-link:active {
+  border-color: $mainColorLight;
+  color: $mainColorLight;
+  outline: none;
+}
+
+.footer__item-link:focus {
+  outline: 1px solid $mainColorLight;
+}
+
+.footer__item-link:hover {
+  margin-bottom: -3px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid $colorWhite;
+}
+
+.footer__item-link:active {
+  border-color: $mainColorLight;
+  color: $mainColorLight;
+  outline: none;
+}
+
+.modal__close-btn:focus {
+  outline: 1px solid $mainColorLight;
+}
+
+.modal__input:focus {
+  outline: 1px solid $mainColorLight;
+}
+
+.modal__btn:focus {
+  border: 1px solid $mainColorDark;
+}
+
+.modal__btn:hover {
+  border: 1px solid $colorText;
+  color: $mainColorLight;
+  background-color: $colorWhite;
+}
+
+.modal__btn:active {
+  border: 1px solid $colorWhite;
+  color: $colorWhite;
+  background-color: $mainColorDark;
+}
